@@ -4,7 +4,7 @@ import famec from '../img/FAMEC.png'
 
 export function Ofuturo(){
     return(
-        <section id="#sobre" className="flex items-center justify-center relative w-full h-fit">
+        <section id="#sobre" className="flex items-center justify-center w-full h-fit">
             <div>
                 <img src={user01} alt="" />
             </div>

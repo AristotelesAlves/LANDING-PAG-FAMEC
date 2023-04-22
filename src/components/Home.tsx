@@ -21,8 +21,8 @@ export function Home(){
                     FAMEC reflete o esforço de conceber a Instituição em sua totalidade, a partir de uma visão que a insere no plano nacional e regional alinhá-la à nova era e baseada num ambiente que busca autonomia para tornar-se uma instituição inovadora e de expressão regional, com dimensão compatível com o atual estágio de desenvolvimento e com as necessidades futuras que a realidade local impõe.
                     </p>
                     <a 
-                     className="bg-custom-blue-01 text-white px-5 py-3 w-fit rounded-xl text-lg font-semibold shadow-2xl"
-                     href="">
+                     className="bg-custom-blue-01 text-white px-5 py-3 w-fit rounded-xl text-lg font-semibold shadow-2xl hover:bg-blue-700 active:bg-blue-500"
+                     href="#inscricao">
                         Inscreva-se
                     </a>
                     <div className="before:content bg-blue-950 w-[450px] h-[2px]">

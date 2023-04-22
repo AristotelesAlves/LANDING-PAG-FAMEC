@@ -27,7 +27,7 @@ export function CardCursos(props: ICardCursos){
             </ul>
             <div className="w-full m-auto h-fit text-center pb-2">
                 <a 
-                 href="#"
+                 href="#inscricao"
                  className="border-b-[2px] border-blue-900 px-2 py-1 hover:border-b-[3px] hover:border-blue-950"
                 >
                     Tenho interesse
