@@ -1,6 +1,6 @@
 import homeImg from '../img/ImgHome.png'
 import famec from '../img/FAMEC.png'
-import { Hamburger, List, X } from 'phosphor-react'
+import { List, X } from 'phosphor-react'
 import { useState } from 'react'
 
 export function Home(){

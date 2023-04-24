@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import bg from '../img/bg-img.png'
 import InputMask from 'react-input-mask';
 import { api } from '../services/api';
