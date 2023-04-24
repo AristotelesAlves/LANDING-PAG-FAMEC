@@ -1,5 +1,6 @@
 import { CardCursos } from "./CardCursos";
 import logoDireito from '../img/direito.svg'
+import { Calculator, Cookie, Scales, Users } from "phosphor-react";
 
 export function Cursos(){
     return(
@@ -10,7 +11,7 @@ export function Cursos(){
             <div className="flex gap-4 justify-center w-full h-fit flex-wrap">
                 <CardCursos 
                  description="Direito é a área responsável por promover a aplicação e execução de normas jurídicas que regem a sociedade." 
-                 img={logoDireito} 
+                 img={<Scales size={50} />} 
                  modality="EAD e Presencial" 
                  time="5 anos" 
                  title="Direito"
@@ -18,7 +19,7 @@ export function Cursos(){
 
 <CardCursos 
                  description="O curso de Administração é amplo e versátil, pois reúne diversas áreas de conhecimento como Gestão de Pessoas, Direito, Economia, Contabilidade e Marketing." 
-                 img={logoDireito} 
+                 img={<Calculator size={50} />} 
                  modality="EAD e Presencial" 
                  time="Duração: 4 anos" 
                  title="Adminstração"
@@ -27,7 +28,7 @@ export function Cursos(){
 
 <CardCursos 
                  description="Nutrição é a área de conhecimento que estuda o comportamento do organismo humano durante o processamento e aproveitamento de nutrientes dos alimentos." 
-                 img={logoDireito} 
+                 img={<Cookie size={50} />} 
                  modality="EAD e Presencial" 
                  time="4 anos" 
                  title="Nutrição"
@@ -35,7 +36,7 @@ export function Cursos(){
 
 <CardCursos 
                  description="Serviço Social é a área relacionada à execução de políticas públicas e programas sociais, que tem por objetivo a inclusão social, a diminuição de desigualdades e a garantia de direitos do cidadão." 
-                 img={logoDireito} 
+                 img={<Users size={50} />} 
                  modality="EAD e Presencial" 
                  time="4 anos" 
                  title="Serviço social"

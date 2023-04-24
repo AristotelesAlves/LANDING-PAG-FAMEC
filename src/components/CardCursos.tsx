@@ -1,7 +1,8 @@
-import { Calendar, MapPin, BookmarkSimple } from 'phosphor-react';
+import { Calendar, MapPin, BookmarkSimple, IconProps } from 'phosphor-react';
+
 
 interface ICardCursos{
-    img: string;
+    img: React.ReactElement<IconProps>;
     title: string;
     description: string;
     modality: string;
@@ -12,7 +13,7 @@ export function CardCursos(props: ICardCursos){
     return(
         <div className="bg-white p-3 shadow-xl rounded-xl w-[340px] h-[450px] flex flex-col justify-center item ">
             <div className="flex gap-1 h-fit items-center text-xl font-bold pt-3 ">
-                <img src={props.img} alt="" />
+                {props.img}
                 <strong className="text-blue-950 text-2xl">
                     {props.title}
                 </strong>
