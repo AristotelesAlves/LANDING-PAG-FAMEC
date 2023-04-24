@@ -3,7 +3,7 @@ import famec from '../img/FAMEC.png'
 
 export function Footer(){
     return(
-        <footer className="w-full h-fit flex flex-col py-5 justify-center">
+        <footer id="contato" className="w-full h-fit flex flex-col py-5 justify-center">
             <div className="w-full flex justify-around flex-wrap max-[1200px]:gap-2">
                 <img className="max-[1200px]:h-[80px]" src={famec} alt="" />
                 <div className="">
