@@ -4,7 +4,7 @@ import { Calculator, Cookie, Scales, Users } from "phosphor-react";
 export function Cursos(){
     return(
         <section className="flex flex-col items-center w-full bg-custom-bg py-6">
-            <strong className="text-4xl pb-7 pt-2 text-blue-950 max-[1200px]:text-3xl">
+            <strong className="text-4xl pb-7 pt-2 text-blue-950 max-[1200px]:text-3xl max-[1200px]:text-center">
                 Nossos melhores cursos para você
             </strong>
             <div className="flex gap-4 justify-center w-full h-fit flex-wrap">
