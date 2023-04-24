@@ -9,8 +9,8 @@ export function Home(){
     
     return (
         <header className="flex flex-col min-[1200px]:items-center max-[1200px]:center w-full bg-custom-bg">
-            <div className="flex w-full h-fit justify-between px-10 py-2 bg-white backdrop-blur-sm bg-opacity-50 drop-shadow-2xl ">
-                <img src={famec} alt="" />
+            <div className="flex w-full h-fit justify-between px-10 py-2 bg-white backdrop-blur-sm bg-opacity-50 drop-shadow-2xl max-[1200px]:pl-3">
+                <img className="max-[1200px]:w-50" src={famec} alt="" />
                 <ul className="flex gap-10 h-20 items-center text-xl mr-10 max-[1200px]:hidden">
                     <li><a href="#home" className="font-semibold text-2xl">Home</a></li>
                     <li><a href="#inscricao" className="font-semibold text-2xl">Inscrições</a></li>
@@ -25,11 +25,11 @@ export function Home(){
                 </button>
             </div>
             <div className="flex w-full h-fit justify-center">
-                <div className="flex flex-col gap-10 py-10 max-[1200px]:text-sm">
-                    <h1 className="font-bold  text-5xl text-blue-950 w-[600px] max-[1200px]:w-[500px] uppercase">
+                <div className="flex flex-col gap-10 py-10 max-[1200px]:text-sm max-[1200px]:px-3">
+                    <h1 className="font-bold  text-5xl text-blue-950 w-[600px] max-[1200px]:w-full max-[1200px]:text-4xl uppercase">
                     A faculdade metropolitana do cariri.
                     </h1>
-                    <p className="tracking-widest w-[500px]">
+                    <p className="tracking-widest w-[500px] max-[1200px]:w-full">
                     FAMEC reflete o esforço de conceber a Instituição em sua totalidade, a partir de uma visão que a insere no plano nacional e regional alinhá-la à nova era e baseada num ambiente que busca autonomia para tornar-se uma instituição inovadora e de expressão regional, com dimensão compatível com o atual estágio de desenvolvimento e com as necessidades futuras que a realidade local impõe.
                     </p>
                     <a 
@@ -37,8 +37,7 @@ export function Home(){
                      href="#inscricao">
                         Inscreva-se
                     </a>
-                    <div className="before:content bg-blue-950 w-[450px] h-[2px]">
-
+                    <div className="before:content bg-blue-950 w-[450px] max-[1200px]:w-[350px] h-[2px]">
                     </div>
                 </div>
                 <img className="h-[700px] w-[700px] max-[1200px]:hidden" src={homeImg} alt="" />

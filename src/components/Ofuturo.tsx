@@ -4,7 +4,7 @@ import famec from '../img/FAMEC.png'
 
 export function Ofuturo(){
     return(
-        <section id="#sobre" className="flex items-center justify-center w-full h-fit max-[1200px]:py-5 max-[1200px]:text-center ">
+        <section id="#sobre" className="flex items-center justify-center w-full h-fit max-[1200px]:py-5 max-[1200px]:text-center max-[1200px]:p-2">
             <div className="max-[1200px]:hidden">
                 <img src={user01} alt="" />
             </div>
@@ -12,7 +12,7 @@ export function Ofuturo(){
                 <strong className="text-5xl text-blue-950">
                     O futuro é agora!
                 </strong>
-                <div className="w-[600px] flex flex-col gap-3 ml-24 max-[1200px]:w-[500px] max-[1200px]:ml-0">
+                <div className="w-[600px] flex flex-col gap-3 ml-24 max-[1200px]:w-full max-[1200px]:ml-0">
                     <p>
                         A FAMEC é uma instituição de Ensino Superior devidamente credenciada pelo Ministério da Educação – MEC, por meio da Portaria Ministerial nº 90, de 14 de Janeiro de 2019.
                     </p>
@@ -21,8 +21,8 @@ export function Ofuturo(){
                     </p>
                 </div>
                 <div className="flex justify-end items-end">
-                    <img src={famec} alt="" />
-                    <img src={mac} alt="" />
+                    <img className="max-[1200px]:h-10" src={famec} alt="" />
+                    <img className="max-[1200px]:h-10" src={mac} alt="" />
                 </div>
             </div>
         </section>
