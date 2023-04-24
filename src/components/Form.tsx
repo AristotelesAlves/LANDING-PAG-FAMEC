@@ -94,18 +94,17 @@ export function Form(){
 
         handleInformations()
 
-        if(responseError == 'já existe email' || responseError == 'já existe rg' || responseError == 'já existe cpf' ){
+        if(responseError == 'já existe email' || responseError == 'já existe rg' || responseError == 'já existe cpf' || responseError == 'Endereço de e-mail não é válido!'){
             return;
-        }
-
-        hideElementAfterDelay()
-        setNome('')
-        setEmail('')
-        setTelefone('')
-        setCpf('')
-        setRg('')
-        
-        setDataNascimento('')
+        }else{
+            hideElementAfterDelay()
+            setNome('')
+            setEmail('')
+            setTelefone('')
+            setCpf('')
+            setRg('')
+            setDataNascimento('')
+        } 
     }
 
     return (
@@ -219,11 +218,8 @@ export function Form(){
                     </button>
                 </form>
                 <div className="">
-                    {/* <strong className={`text-green-700 text-xl border-b-[3px] border-green-600 pb-2`}>
-                        {responseError == 'mensagem enviado com sucesso' ? 'mensagem enviado com sucesso' : ' ' }
-                    </strong> */}
                     <strong 
-                      className={`${isVisible == true ? 'hidden':' '} ${responseError == 'já existe email' ? 'text-red-500' : responseError == 'já existe rg' ? 'text-red-500' : responseError == 'já existe cpf' ? 'text-red-500' : responseError == 'Endereço de e-mail não é válido!' ? 'text-red-500' : 'text-green-500'}`}
+                      className={`${isVisible == true ? 'hidden':'flex'} ${responseError == 'já existe email' ? 'text-red-500' : responseError == 'já existe rg' ? 'text-red-500' : responseError == 'já existe cpf' ? 'text-red-500' : responseError == 'Endereço de e-mail não é válido!' ? 'text-red-500' : 'text-green-500'}`}
                     >
                         {responseError == 'já existe email' ? 'já existe email' : responseError == 'já existe rg' ? 'já existe rg' : responseError == 'já existe cpf' ? 'já existe cpf' : responseError == 'Endereço de e-mail não é válido!' ? 'Endereço de e-mail não é válido!' : 'mensagem enviado com sucesso'}
                     </strong>
