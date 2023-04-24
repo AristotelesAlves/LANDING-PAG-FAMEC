@@ -20,7 +20,7 @@ export function Form(){
     const [invalidcpf, setInvalidcpf] = useState('');
     const [invalidNRg, setInvalidNRg] = useState('');
     const [invalidDataNascimento, setInvalidDataNascimento] = useState('');
-    const [responseError, setResponseError] = useState<any>(null);;
+    const [responseError, setResponseError] = useState<any>(null);
 
     function hideElementAfterDelay() {
         setIsVisible(!isVisible);

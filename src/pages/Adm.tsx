@@ -11,8 +11,7 @@ interface Iuser {
 }
 
 export function Adm(){
-
-    const [response, setResponse] = useState<Iuser[]>([])
+  const [response, setResponse] = useState<Iuser[]>([])
 
     useEffect(()=> {
         api.get<Iuser[]>('/users')
@@ -20,7 +19,6 @@ export function Adm(){
                 setResponse(response.data)
             })
     })
-
     return(
         <div>
             <tr className="flex w-full justify-around mt-10 text-center">

@@ -17,6 +17,7 @@ export function Home(){
                     <li><a href="#home" className="font-semibold text-2xl">Home</a></li>
                     <li><a href="#inscricao" className="font-semibold text-2xl">Inscrições</a></li>
                     <li><a href="#contato" className="font-semibold text-2xl">Contato</a></li>
+                    <li><a href="/adm" className="font-semibold text-2xl">ADM</a></li>
                 </ul>
                 <button 
                   className="min-[1200px]:hidden"

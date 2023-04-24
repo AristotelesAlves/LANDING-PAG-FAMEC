@@ -29,6 +29,7 @@ export function Footer(){
                 <p>
                     2022 © Todos os Direitos Reservados
                 </p>
+                
             </div>
         </footer>
     )
