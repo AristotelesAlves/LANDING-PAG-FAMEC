@@ -11,7 +11,9 @@ export function Home(){
         <header className="flex flex-col min-[1200px]:items-center max-[1200px]:center w-full bg-custom-bg">
             <div className="flex w-full h-fit justify-between px-10 py-2 bg-white backdrop-blur-sm bg-opacity-50 drop-shadow-2xl max-[1200px]:pl-3">
                 <img className="max-[1200px]:w-50" src={famec} alt="" />
-                <ul className="flex gap-10 h-20 items-center text-xl mr-10 max-[1200px]:hidden">
+                <ul 
+                 className={`flex gap-10 h-20 items-center text-xl mr-10 max-[1200px]:flex-col max-[1200px]:absolute max-[1200px]:right-0 top-20 max-[1200px]:bg-white max-[1200px]:h-fit max-[1200px]:p-20 max-[1200px]:gap-10 max-[1200px]:mr-0 ${opening == true ? 'max-[1200px]:right-0' :'max-[1200px]:right-[1000px]' }`}
+                >
                     <li><a href="#home" className="font-semibold text-2xl">Home</a></li>
                     <li><a href="#inscricao" className="font-semibold text-2xl">Inscrições</a></li>
                     <li><a href="#home" className="font-semibold text-2xl">Contato</a></li>

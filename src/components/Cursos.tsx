@@ -1,5 +1,4 @@
 import { CardCursos } from "./CardCursos";
-import logoDireito from '../img/direito.svg'
 import { Calculator, Cookie, Scales, Users } from "phosphor-react";
 
 export function Cursos(){
