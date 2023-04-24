@@ -104,6 +104,7 @@ export function Form(){
         setTelefone('')
         setCpf('')
         setRg('')
+        
         setDataNascimento('')
     }
 
@@ -113,7 +114,7 @@ export function Form(){
          className="h-fit w-full flex max-[1200px]:justify-center min-[1200px]:justify-end min-[1200px]:px-20 items-center py-10"
          style={{ backgroundImage:`url(${bg})`}}>
          
-            <div className="w-[500px] max-[1200px]:w-[380px] h-fit bg-custom-bg py-10 flex flex-col items-center justify-center">
+            <div className="w-[450px] max-[1200px]:w-[380px] h-fit bg-custom-bg py-10 flex flex-col items-center justify-center">
                 <strong className="text-3xl mb-6">
                     Inscrição gratuito!
                 </strong>
