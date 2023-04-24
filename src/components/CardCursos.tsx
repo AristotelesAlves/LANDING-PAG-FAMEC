@@ -11,7 +11,7 @@ interface ICardCursos{
 
 export function CardCursos(props: ICardCursos){
     return(
-        <div className="bg-white p-3 shadow-xl rounded-xl w-[340px] h-[450px] flex flex-col justify-center item ">
+        <div className="bg-white p-3 shadow-xl rounded-xl w-[320px] h-[450px] flex flex-col justify-center item ">
             <div className="flex gap-1 h-fit items-center text-xl font-bold pt-3 ">
                 {props.img}
                 <strong className="text-blue-950 text-2xl">

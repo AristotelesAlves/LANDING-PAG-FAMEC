@@ -6,7 +6,7 @@ export function Ofuturo(){
     return(
         <section id="#sobre" className="flex items-center justify-center w-full h-fit max-[1200px]:py-5 max-[1200px]:text-center max-[1200px]:p-2">
             <div className="max-[1200px]:hidden">
-                <img src={user01} alt="" />
+                <img className="w-[600px]" src={user01} alt="" />
             </div>
             <div className="flex flex-col gap-11">
                 <strong className="text-5xl text-blue-950">
