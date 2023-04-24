@@ -17,28 +17,28 @@ export function Cursos(){
                 />
 
 <CardCursos 
-                 description="Direito é a área responsável por promover a aplicação e execução de normas jurídicas que regem a sociedade." 
+                 description="O curso de Administração é amplo e versátil, pois reúne diversas áreas de conhecimento como Gestão de Pessoas, Direito, Economia, Contabilidade e Marketing." 
                  img={logoDireito} 
                  modality="EAD e Presencial" 
-                 time="5 anos" 
-                 title="Direito"
+                 time="Duração: 4 anos" 
+                 title="Adminstração"
                 />
 
 
 <CardCursos 
-                 description="Direito é a área responsável por promover a aplicação e execução de normas jurídicas que regem a sociedade." 
+                 description="Nutrição é a área de conhecimento que estuda o comportamento do organismo humano durante o processamento e aproveitamento de nutrientes dos alimentos." 
                  img={logoDireito} 
                  modality="EAD e Presencial" 
-                 time="5 anos" 
-                 title="Direito"
+                 time="4 anos" 
+                 title="Nutrição"
                 />
 
 <CardCursos 
-                 description="Direito é a área responsável por promover a aplicação e execução de normas jurídicas que regem a sociedade." 
+                 description="Serviço Social é a área relacionada à execução de políticas públicas e programas sociais, que tem por objetivo a inclusão social, a diminuição de desigualdades e a garantia de direitos do cidadão." 
                  img={logoDireito} 
                  modality="EAD e Presencial" 
-                 time="5 anos" 
-                 title="Direito"
+                 time="4 anos" 
+                 title="Serviço social"
                 />
             </div>
         </section>
