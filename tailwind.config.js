@@ -7,11 +7,16 @@ export default {
   theme: {
     extend: {
       colors:{
-        'custom-blue-01':'#335DFF',
-        'custom-bg':'#E7E7E7'
+        'azul-custom':'#3772FF',
+        'laranja-custom':'#F75C03',
+        'cinza-custom':'#565656',
+        'color-home':'#F9F7FF'
       },
       backgroundImage:{
-        'custom-background':"url('/img/bg-img.png')"
+        'home':"url('./img/logo.png')"
+      },
+      dropShadow:{
+        'padrao':'0px 4px 4px rgba(0, 0, 0, 0.25)',
       }
     },
   },

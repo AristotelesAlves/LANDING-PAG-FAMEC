@@ -1,10 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
-import Rotas from "./Router";
+import { LandingPag } from "./pages/LandingPag";
 
 export default function App(){
   return(
-      <BrowserRouter>
-        <Rotas/>
-      </BrowserRouter>
+      <LandingPag/>
   )
 }

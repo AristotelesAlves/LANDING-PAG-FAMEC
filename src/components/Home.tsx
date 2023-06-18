@@ -1,50 +1,80 @@
-import homeImg from '../img/ImgHome.png'
-import famec from '../img/FAMEC.png'
-import { List, X } from 'phosphor-react'
-import { useState } from 'react'
+import { MonitorPlay, MouseSimple, Sparkle, UsersThree } from "phosphor-react";
 
 export function Home(){
-
-    const [opening,setOpening]= useState(true);
-    
-    return (
-        <header className="flex flex-col min-[1200px]:items-center max-[1200px]:center w-full bg-custom-bg">
-            <div className="flex w-full h-fit justify-between px-10 py-2 bg-white backdrop-blur-sm bg-opacity-50 drop-shadow-2xl max-[1200px]:pl-3">
-                <img className="max-[1200px]:w-50" src={famec} alt="" />
-                <ul 
-                 className={`flex gap-10 h-20 items-center text-xl mr-10 max-[1200px]:flex-col max-[1200px]:absolute max-[1200px]:right-0 top-20 max-[1200px]:bg-white max-[1200px]:h-fit max-[1200px]:p-20 max-[1200px]:gap-10 max-[1200px]:mr-0 ${opening == false ? 'max-[1200px]:right-0' :'max-[1200px]:right-[1000px]'} transition-transform duration-1000`}
-                >
-                    <li><a href="#home" className="font-semibold text-2xl">Home</a></li>
-                    <li><a href="#inscricao" className="font-semibold text-2xl">Inscrições</a></li>
-                    <li><a href="#contato" className="font-semibold text-2xl">Contato</a></li>
-                    <li><a href="/adm" className="font-semibold text-2xl">ADM</a></li>
-                </ul>
-                <button 
-                  className="min-[1200px]:hidden"
-                onClick={() => {
-                    setOpening(!opening)
-                }}>
-                    {opening == true ? <List size={40}/> : <X size={40}/>}
-                </button>
-            </div>
-            <div className="flex w-full h-fit justify-center">
-                <div className="flex flex-col gap-10 py-10 max-[1200px]:text-sm max-[1200px]:px-3">
-                    <h1 className="font-bold  text-5xl text-blue-950 w-[600px] max-[1200px]:w-full max-[1200px]:text-4xl uppercase">
-                    A faculdade metropolitana do cariri.
+    return(
+        <div className="flex justify-center bg-color-home h-full pt-10">
+            <div className="w-[45%] flex flex-col items-center mt-2">
+                <div className="h-full">
+                    <h1 className="text-5xl font-bold text-cinza-custom">
+                        O 
+                        <label className="px-1 text-laranja-custom">
+                            futuro
+                        </label>
+                        da<br/>
+                        Educação é aqui!
                     </h1>
-                    <p className="tracking-widest w-[500px] max-[1200px]:w-full">
-                    FAMEC reflete o esforço de conceber a Instituição em sua totalidade, a partir de uma visão que a insere no plano nacional e regional alinhá-la à nova era e baseada num ambiente que busca autonomia para tornar-se uma instituição inovadora e de expressão regional, com dimensão compatível com o atual estágio de desenvolvimento e com as necessidades futuras que a realidade local impõe.
+                    <p className="mt-5 text-cinza-custom">
+                        A 
+                        <label className="text-azul-custom px-2">
+                            TCB
+                            <label className="text-laranja-custom ">
+                                INFO
+                            </label>
+                        </label> 
+                        é uma plataforma de curso fictício, apenas<br/> para aprimorar meus domínios com ferramentas de<br/> desenvolvimento web.
                     </p>
-                    <a 
-                     className="bg-custom-blue-01 text-white px-5 py-3 w-fit rounded-xl text-lg font-semibold shadow-2xl hover:bg-blue-700 active:bg-blue-500"
-                     href="#inscricao">
-                        Inscreva-se
-                    </a>
-                    <div className="before:content bg-blue-950 w-[450px] max-[1200px]:w-[350px] h-[2px]">
+                    <p className="mt-48 font-light text-cinza-custom flex gap-1 items-center">
+                        <MouseSimple 
+                          className="animate-bounce mt-2"
+                          size={23}
+                        />
+                        Desça  para ver nossos cursos!
+                    </p>
+                </div>
+            </div>
+            <div className="bg-home bg-right bg-no-repeat w-[52%] h-[446px]">
+                <div className="flex flex-col gap-6">
+                    <div className="flex bg-white px-2 py-2 rounded-xl items-center gap-2 ml-20 w-44 drop-shadow-padrao">
+                        <div className="bg-laranja-custom h-fit w-fit p-1 rounded-lg text-white flex justify-center items-center shadow-md shadow-laranja-custom">
+                            <MonitorPlay size={32} />
+                        </div>
+                        <div >
+                            <p className="font-bold text-sm">
+                                +10 Cursos
+                            </p>
+                            <p className="text-cinza-custom text-sm">
+                                Gratuitos
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex bg-white px-2 py-2 w-44 rounded-xl items-center gap-2 ml-10 drop-shadow-padrao">
+                        <div className="bg-laranja-custom h-fit w-fit p-1 rounded-lg text-white flex justify-center items-center shadow-md shadow-laranja-custom ">
+                            <Sparkle size={32} />
+                        </div>
+                        <div>
+                            <p className="font-bold text-sm">
+                                Certificados
+                            </p>
+                            <p className="text-cinza-custom text-sm">
+                                Gratuitos
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex bg-white px-2 py-2 w-44 rounded-xl items-center gap-2 drop-shadow-padrao">
+                        <div className="bg-laranja-custom h-fit w-fit p-1 rounded-lg text-white flex justify-center items-center shadow-md shadow-laranja-custom">
+                            <UsersThree size={32} />
+                        </div>
+                        <div>
+                            <p className="font-bold text-sm">
+                                +100 Alunos
+                            </p>
+                            <p className="text-cinza-custom text-sm">
+                                Formado
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <img className="h-[700px] w-[700px] max-[1200px]:hidden" src={homeImg} alt="" />
             </div>
-        </header>
+        </div>
     )
 }
